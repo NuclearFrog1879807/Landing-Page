@@ -3,3 +3,53 @@
     margin: 0;
     padding: 0;
 }
+
+html, body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.middle-top, .middle-bottom, .bottom {
+    flex: 3;
+}
+
+.top {
+    flex: 4;
+}
+
+.very-bottom {
+    flex: 0 60px;
+}
+
+.top, .middle-top, .middle-bottom, .bottom, .very-bottom, .header, .main {
+    display: flex;
+}
+
+.top, .middle-top, .middle-bottom, .bottom, .very-bottom {
+    flex-direction: column;
+}
+
+.top, .very-bottom {
+    background-color: #1F2937;
+    color: white;
+}
+
+.middle-bottom {
+    background-color: #E5E7EB;
+}
+
+.header {
+    width: 100%;
+    height: 40px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
