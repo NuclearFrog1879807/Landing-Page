@@ -17,24 +17,31 @@ html, body {
     flex-direction: column;
 }
 
-.middle-top, .middle-bottom, .bottom {
-    flex: 3;
+.top {
+    flex: 7;
 }
 
-.top {
+.middle-top {
+    flex: 6;
+}
+
+.middle-bottom {
+    flex: 5;
+}
+
+.bottom {
     flex: 4;
-    padding: 0 100px;
 }
 
 .very-bottom {
-    flex: 0 60px;
+    flex: 0 40px;
 }
 
-.top, .middle-top, .middle-bottom, .bottom, .very-bottom, .header, .header-links, .main, .main .right, .main .left {
+.top, .middle-top, .middle-bottom, .bottom, .very-bottom, .header, .header-links, .main, .main .right, .main .left, .info, .sign-up, .sign-up .left, .sign-up .right {
     display: flex;
 }
 
-.top, .middle-top, .middle-bottom, .bottom, .very-bottom {
+.top, .middle-top, .middle-bottom, .bottom, .very-bottom, .main .left, .sign-up .left, .sign-up .right {
     flex-direction: column;
 }
 
@@ -45,6 +52,10 @@ html, body {
 
 .middle-bottom {
     background-color: #E5E7EB;
+}
+
+.top {
+    padding: 0 100px;
 }
 
 .header {
@@ -62,6 +73,7 @@ html, body {
 .header-links {
     gap: 15px;
     font-size: 8px;
+    color: #E5E7EB;
 }
 
 .main {
@@ -69,16 +81,16 @@ html, body {
     height: 100%;
     justify-content: space-between;
     align-items: center;
+    gap: 10px;
 }
 
 .main .left, .main .right {
-    width: 240px;
+    flex: 1;
     height: 100px;
     font-size: 8px;
 }
 
 .main .left {
-    flex-direction: column;
     gap: 3px;
 }
 
@@ -108,4 +120,94 @@ html, body {
     justify-content: center;
     align-items: center;
     background-color: gray;
+}
+
+.middle-top h2 {
+    text-align: center;
+    margin: 20px;
+    font-size: 16px;
+}
+
+.info {
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px;
+}
+
+.info div {
+    width: 75px;
+}
+
+.empty {
+    height: 75px;
+    border: 3px solid #3882F6;
+    border-radius: 8px;
+}
+
+.info p {
+    font-size: 8px;
+    color: #777;
+    text-align: center;
+    padding-top: 4px;
+}
+
+.middle-bottom {
+    justify-content: center;
+    align-items: center;
+}
+
+.middle-bottom div {
+    width: 400px;
+}
+
+.quote {
+    font-size: 16px;
+    color: #1F2937;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+.author {
+    text-align: right;
+    font-size: 12px;
+}
+
+.bottom {
+    justify-content: center;
+    align-items: center;
+}
+
+.sign-up {
+    width: 500px;
+    height: 60px;
+    background-color: #3882F6;
+    border-radius: 4px;
+    color: white;
+    font-size: 10px;
+}
+
+.sign-up .left {
+    flex: 2;
+    padding-left: 40px;
+    justify-content: center;
+}
+
+.sign-up .right {
+    flex: 1;
+    justify-content: center;
+}
+
+.sign-up h3 {
+    font-size: 12px;
+}
+
+.sign-up button {
+    align-self: center;
+    border: 2px solid white;
+}
+
+.very-bottom {
+    font-size: 10px;
+    justify-content: center;
+    align-items: center;
 }
